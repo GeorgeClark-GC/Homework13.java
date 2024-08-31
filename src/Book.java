@@ -33,7 +33,26 @@ public class Book {
     }
 
     @Override
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Book Book1 = (Book) other;
+        return name.equals(Book1.name);
+    }
+
+    @Override
     public String toString() {
         return "Book: " + name + "; Year of publication: " + publishingYear + "; Author: " + author;
     }
+
+
+    /*@Override
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Book Book3 = (Book) other;
+        return name.equals(Book3.name);
+    }*/
 }

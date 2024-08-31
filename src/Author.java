@@ -19,4 +19,13 @@ public class Author {
     public String toString() {
         return firstName + " " + secondName;
     }
+
+    @Override
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Author SL = (Author) other;
+        return firstName.equals(SL.firstName);
+    }
 }

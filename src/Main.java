@@ -22,5 +22,11 @@ public class Main {
         Book DandelionWine = new Book("Dandelion Wine", 1957, RB);
         String Book4 = DandelionWine.toString();
         System.out.println(Book4);
+        Book DuplicateSolaris = new Book("Solaris", 1961, SL);
+        String Book5 = DuplicateSolaris.toString();
+        System.out.println(Book5);
+        System.out.println(Book5.equals(Book1));
+        Author SM = new Author("Stanislav", "Martin");
+        System.out.println(SM.equals(SL));
     }
 }
