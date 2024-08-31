@@ -31,5 +31,8 @@ public class Book {
         }
         this.publishingYear = publishingYear;
     }
-
+    @Override
+    public String toString(){
+        return "Book: " + name + "; Year of publication: " + publishingYear + "; Author: " + author;
+    }
 }
